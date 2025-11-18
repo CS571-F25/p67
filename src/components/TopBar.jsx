@@ -28,9 +28,6 @@ export default function TopBar() {
             <LinkContainer to="/portfolio">
               <Nav.Link>Portfolio</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/scheduler">
-              <Nav.Link>Scheduler</Nav.Link>
-            </LinkContainer>
             <LinkContainer to="/news">
               <Nav.Link>Recent News</Nav.Link>
             </LinkContainer>
