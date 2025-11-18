@@ -1,9 +1,13 @@
 import { Navbar, Nav, Container, Image } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import { useLocation } from 'react-router';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from '../assets/Logo_Icon_Antonyx_Consulting.png';
+import '../styles/TopBar.css';
+import logo from '../assets/Logo_Antonyx_Consulting.png';
 
 export default function TopBar() {
+  const location = useLocation();
+
   return (
     <Navbar bg="light" expand="lg" fixed="top" className="border-bottom shadow-sm">
       <Container>
@@ -20,22 +24,19 @@ export default function TopBar() {
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
           <Nav>
             <LinkContainer to="/">
-              <Nav.Link>Home</Nav.Link>
+              <Nav.Link active={location.pathname === "/"}>Home</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/about">
-              <Nav.Link>About Me</Nav.Link>
+              <Nav.Link active={location.pathname === "/about"}>About Me</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/portfolio">
-              <Nav.Link>Portfolio</Nav.Link>
-            </LinkContainer>
-            <LinkContainer to="/scheduler">
-              <Nav.Link>Scheduler</Nav.Link>
+              <Nav.Link active={location.pathname === "/portfolio"}>Portfolio</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/news">
-              <Nav.Link>Recent News</Nav.Link>
+              <Nav.Link active={location.pathname === "/news"}>Recent News</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/contact">
-              <Nav.Link>Contact Me</Nav.Link>
+              <Nav.Link active={location.pathname === "/contact"}>Contact Me</Nav.Link>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>
