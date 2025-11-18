@@ -1,0 +1,71 @@
+/* RecentNews Component Styles */
+.recent-news-container {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding-top: 80px; /* Account for fixed navbar */
+}
+
+.page-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #53575D;
+    margin-bottom: 16px;
+}
+
+.page-subtitle {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #6c757d;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Custom spinner styling */
+.spinner-border-primary {
+    color: #E85C2A !important;
+}
+
+/* Alert customizations */
+.alert-danger {
+    border-color: #E85C2A;
+}
+
+.alert-info {
+    background-color: rgba(232, 92, 42, 0.1);
+    border-color: #E85C2A;
+    color: #53575D;
+}
+
+.alert-info .alert-heading {
+    color: #E85C2A;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .recent-news-container {
+        padding-top: 70px;
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1rem;
+    }
+}

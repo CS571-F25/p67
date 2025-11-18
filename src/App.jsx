@@ -1,5 +1,5 @@
 import { HashRouter, Route, Routes} from 'react-router'
-import './App.css'
+import './styles/App.css'
 import Home from './components/Home.jsx'
 import AboutMe from './components/AboutMe.jsx'
 import ContactMe from './components/ContactMe.jsx'
