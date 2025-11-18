@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Card, Form, Button } from "react-bootstrap";
-import "../App.css";
+import "../styles/App.css";
 
 export default function ContactMe(props) {
   const [form, setForm] = useState({
@@ -18,16 +18,7 @@ export default function ContactMe(props) {
   };
 
   const handleSubmit = (e) => {
-    e?.prventDefault();
-
-    fetch("https://uwprod-my.sharepoint.com/personal/jpliszka_wisc_edu/_layouts/15/doc.aspx?sourcedoc={af7b924a-f4c1-4a74-b903-95fd5b8ddca8}&action=edit", {
-      method: "POST",
-      credentials: "include",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(form)
-    });
+    e?.preventDefault();
   };
 
   return (
