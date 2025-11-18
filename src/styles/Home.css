@@ -1,0 +1,324 @@
+/* Home Page Styles */
+.home-container {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #53575D;
+    overflow-x: hidden;
+}
+
+/* Animations - Only typewriter effect */
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 120px 0 80px;
+    text-align: center;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #53575D;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    position: relative;
+}
+
+.typewriter {
+    display: inline-block;
+}
+
+.cursor {
+    display: inline-block;
+    color: #E85C2A;
+    animation: blink 1s infinite;
+}
+
+.hero-subtitle {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #53575D;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+.cta-button {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-button.primary {
+    background-color: #E85C2A;
+    color: white;
+}
+
+.cta-button.primary:hover {
+    background-color: #d54520;
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    color: #53575D;
+    border: 2px solid #53575D;
+}
+
+.cta-button.secondary:hover {
+    background-color: #53575D;
+    color: white;
+}
+
+.cta-button.large {
+    padding: 18px 40px;
+    font-size: 1.1rem;
+}
+
+.button-icon {
+    margin-left: 8px;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Styling */
+.positioning-section {
+    padding: 80px 0;
+    background-color: white;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.pillars-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.cta-section {
+    padding: 100px 0;
+    background-color: #53575D;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.cta-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.gradient-overlay {
+    background: linear-gradient(135deg, rgba(232, 92, 42, 0.1), rgba(83, 87, 93, 0.95));
+    height: 100%;
+    width: 100%;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #53575D;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.positioning-text {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #53575D;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Pillars Grid */
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.pillar-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.pillar-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.pillar-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #E85C2A;
+    margin-bottom: 16px;
+}
+
+.pillar-description {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #53575D;
+    line-height: 1.6;
+}
+
+/* Pillar Progress Bars */
+.pillar-progress {
+    margin-top: 20px;
+    height: 4px;
+    background: #f0f0f0;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #E85C2A, #ff7a50);
+    width: 100%;
+    border-radius: 2px;
+}
+
+/* CTA Section Enhancements */
+.cta-section .section-title,
+.cta-title {
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-text {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .positioning-text {
+        font-size: 1.1rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-button {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .pillars-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .hero-section,
+    .positioning-section,
+    .pillars-section,
+    .cta-section {
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .pillar-card {
+        padding: 30px 20px;
+    }
+}
