@@ -14,8 +14,9 @@
 }
 
 .top-bar-logo {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700; /* Bold */
   color: #333;
 }
 
@@ -28,9 +29,10 @@
 }
 
 .top-bar-link {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-decoration: none;
   color: #555;
-  font-weight: 500;
+  font-weight: 400; /* Regular */
   padding: 8px 16px;
   border-radius: 4px;
   transition: background-color 0.2s;

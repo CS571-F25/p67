@@ -3,6 +3,12 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400; /* Regular */
+}
+
+#root * {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .logo {
