@@ -1,0 +1,97 @@
+/* EmployeeCard Component Styles */
+.employee-card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.employee-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #E85C2A, #ff7a50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.employee-name {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #53575D;
+    margin-bottom: 8px;
+}
+
+.employee-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #E85C2A;
+    margin-bottom: 16px;
+}
+
+.employee-description {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: #6c757d;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.employee-specialties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.specialty-tag {
+    background-color: rgba(232, 92, 42, 0.1);
+    color: #E85C2A;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(232, 92, 42, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .employee-card {
+        padding: 16px;
+    }
+    
+    .avatar-placeholder {
+        width: 60px;
+        height: 60px;
+        font-size: 1.2rem;
+    }
+    
+    .employee-name {
+        font-size: 1.1rem;
+    }
+    
+    .employee-title {
+        font-size: 0.9rem;
+    }
+    
+    .employee-description {
+        font-size: 0.9rem;
+    }
+}
