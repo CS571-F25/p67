@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Card, Form, Button } from "react-bootstrap";
 import "../styles/App.css";
 
-export default function ContactMe(props) {
+export default function Contact(props) {
   const [form, setForm] = useState({
     name: "",
     email: "",

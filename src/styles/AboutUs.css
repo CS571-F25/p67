@@ -1,0 +1,360 @@
+/* AboutUs Component Styles */
+.about-us-container {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #53575D;
+}
+
+/* Hero Section */
+.about-hero-section {
+    padding: 120px 0 80px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.about-hero-content {
+    padding-right: 40px;
+}
+
+.about-hero-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #53575D;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.about-hero-subtitle {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #6c757d;
+    line-height: 1.7;
+}
+
+.about-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-logo {
+    max-width: 300px;
+    height: auto;
+}
+
+/* Brand Story Section */
+.brand-story-section {
+    padding: 80px 0;
+    background-color: white;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.story-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.story-content p {
+    margin-bottom: 20px;
+    color: #53575D;
+}
+
+.story-emphasis {
+    font-weight: 600;
+    color: #E85C2A !important;
+    font-size: 1.15rem;
+}
+
+/* Values Section - Modern Block Layout */
+.values-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #53575D 0%, #6c757d 100%);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.values-section .section-title {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.values-subtitle {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.values-showcase {
+    display: flex;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.value-block {
+    flex: 1;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.value-header {
+    background: linear-gradient(135deg, #E85C2A, #ff7a50);
+    padding: 30px 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-number {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: white;
+    opacity: 0.3;
+}
+
+.value-icon-container {
+    background: rgba(255, 255, 255, 0.2);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.value-icon {
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.value-content {
+    padding: 30px 25px;
+}
+
+.value-name {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #53575D;
+    margin-bottom: 15px;
+}
+
+.value-divider {
+    width: 40px;
+    height: 3px;
+    background: #E85C2A;
+    margin-bottom: 20px;
+}
+
+.value-text {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #6c757d;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Services Section */
+.services-section {
+    padding: 80px 0;
+    background-color: white;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.service-pillar {
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    height: 100%;
+    border-left: 4px solid #E85C2A;
+}
+
+.service-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #53575D;
+    margin-bottom: 12px;
+}
+
+.service-description {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #E85C2A;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #53575D;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.service-list li::before {
+    content: "•";
+    color: #E85C2A;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Team Section */
+.team-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.team-subtitle {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section Titles */
+.section-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #53575D;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+/* Container Override */
+.about-us-container .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .about-hero-content {
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .about-logo {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero-section {
+        padding: 100px 0 60px;
+    }
+    
+    .about-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .about-hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .brand-story-section,
+    .values-section,
+    .services-section,
+    .team-section {
+        padding: 60px 0;
+    }
+    
+    .service-pillar {
+        padding: 25px 20px;
+    }
+    
+    .story-content {
+        font-size: 1rem;
+    }
+    
+    /* Values responsive design */
+    .values-showcase {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .value-header {
+        padding: 25px 20px;
+    }
+    
+    .value-number {
+        font-size: 2rem;
+    }
+    
+    .value-icon-container {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .value-icon {
+        font-size: 1.2rem;
+    }
+    
+    .value-content {
+        padding: 25px 20px;
+    }
+    
+    .value-name {
+        font-size: 1.2rem;
+    }
+    
+    .value-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .about-logo {
+        max-width: 200px;
+    }
+}

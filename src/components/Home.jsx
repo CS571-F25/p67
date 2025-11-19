@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router';
+import { GrUpdate } from 'react-icons/gr';
+import { GiBullseye } from "react-icons/gi";
+import { MdComputer } from "react-icons/md";
 import '../styles/Home.css';
 
 export default function Home(props) {
@@ -67,17 +70,17 @@ export default function Home(props) {
                     <div className="pillars-grid">
                         {[
                             {
-                                icon: "🔄",
+                                icon: <GrUpdate/>,
                                 title: "Modernization",
                                 description: "Transforming outdated systems and workflows into agile, efficient processes."
                             },
                             {
-                                icon: "⚡",
+                                icon: <MdComputer />,
                                 title: "Technology Enablement", 
                                 description: "Simplifying digital adoption to empower teams and streamline operations."
                             },
                             {
-                                icon: "🎯",
+                                icon: <GiBullseye />,
                                 title: "Operational Excellence",
                                 description: "Designing better systems that make healthcare work smarter."
                             }

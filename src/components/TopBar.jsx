@@ -27,7 +27,7 @@ export default function TopBar() {
               <Nav.Link active={location.pathname === "/"}>Home</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/about">
-              <Nav.Link active={location.pathname === "/about"}>About Me</Nav.Link>
+              <Nav.Link active={location.pathname === "/about"}>About Us</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/portfolio">
               <Nav.Link active={location.pathname === "/portfolio"}>Portfolio</Nav.Link>
@@ -36,7 +36,7 @@ export default function TopBar() {
               <Nav.Link active={location.pathname === "/news"}>Recent News</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/contact">
-              <Nav.Link active={location.pathname === "/contact"}>Contact Me</Nav.Link>
+              <Nav.Link active={location.pathname === "/contact"}>Contact</Nav.Link>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>
