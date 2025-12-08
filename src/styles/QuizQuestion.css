@@ -1,0 +1,146 @@
+/* Quiz Question Component Styles */
+.quiz-question-container {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-top: 32px;
+}
+
+.question-text {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #53575D;
+    margin-bottom: 32px;
+    line-height: 1.4;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.option-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    background: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.option-item:hover {
+    background: #fff;
+    border-color: #E85C2A;
+    box-shadow: 0 4px 12px rgba(232, 92, 42, 0.1);
+}
+
+.option-item:focus {
+    outline: 3px solid rgba(232, 92, 42, 0.3);
+    outline-offset: 2px;
+}
+
+.option-item.selected {
+    background: linear-gradient(135deg, rgba(232, 92, 42, 0.1) 0%, rgba(255, 122, 80, 0.1) 100%);
+    border-color: #E85C2A;
+    border-width: 3px;
+}
+
+.option-radio {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #6c757d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.option-item.selected .option-radio {
+    border-color: #E85C2A;
+    border-width: 3px;
+}
+
+.radio-selected {
+    width: 12px;
+    height: 12px;
+    background: #E85C2A;
+    border-radius: 50%;
+}
+
+.option-text {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #53575D;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.selected-indicator {
+    font-size: 1.5rem;
+    color: #E85C2A;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quiz-question-container {
+        padding: 28px 20px;
+    }
+
+    .question-text {
+        font-size: 1.3rem;
+        margin-bottom: 24px;
+    }
+
+    .option-item {
+        padding: 16px 20px;
+    }
+
+    .option-text {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .quiz-question-container {
+        padding: 24px 16px;
+    }
+
+    .question-text {
+        font-size: 1.2rem;
+    }
+
+    .option-item {
+        padding: 14px 16px;
+        gap: 12px;
+    }
+
+    .option-radio {
+        width: 20px;
+        height: 20px;
+    }
+
+    .radio-selected {
+        width: 10px;
+        height: 10px;
+    }
+
+    .option-text {
+        font-size: 0.9rem;
+    }
+
+    .selected-indicator {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,126 @@
+/* Assessment Component Styles */
+.assessment-container {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #53575D;
+    min-height: 100vh;
+}
+
+/* Header Section */
+.assessment-header {
+    padding: 120px 0 60px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.assessment-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #53575D;
+    margin-bottom: 16px;
+}
+
+.assessment-subtitle {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+/* Content Section */
+.assessment-content {
+    padding: 60px 0 80px;
+    background-color: white;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+/* Quiz Navigation */
+.quiz-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 2px solid #e9ecef;
+}
+
+.nav-button {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px 32px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 140px;
+}
+
+.nav-button.primary {
+    background: linear-gradient(135deg, #E85C2A, #ff7a50);
+    color: white;
+}
+
+.nav-button.primary:hover:not(:disabled) {
+    background: linear-gradient(135deg, #d14a1a, #E85C2A);
+    box-shadow: 0 4px 12px rgba(232, 92, 42, 0.3);
+}
+
+.nav-button.primary:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.nav-button.secondary {
+    background: white;
+    color: #53575D;
+    border: 2px solid #dee2e6;
+}
+
+.nav-button.secondary:hover {
+    background: #f8f9fa;
+    border-color: #E85C2A;
+    color: #E85C2A;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .assessment-header {
+        padding: 100px 0 40px;
+    }
+
+    .assessment-title {
+        font-size: 2rem;
+    }
+
+    .assessment-subtitle {
+        font-size: 1rem;
+    }
+
+    .assessment-content {
+        padding: 40px 0 60px;
+    }
+
+    .quiz-navigation {
+        flex-direction: column;
+    }
+
+    .nav-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .assessment-title {
+        font-size: 1.75rem;
+    }
+
+    .nav-button {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+}
