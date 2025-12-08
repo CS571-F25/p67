@@ -35,8 +35,8 @@ export default function TopBar() {
             <LinkContainer to="/news">
               <Nav.Link active={location.pathname === "/news"}>Recent News</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/contact">
-              <Nav.Link active={location.pathname === "/contact"}>Contact</Nav.Link>
+            <LinkContainer to="/schedule">
+              <Nav.Link active={location.pathname === "/schedule"}>Schedule Consultation</Nav.Link>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>
