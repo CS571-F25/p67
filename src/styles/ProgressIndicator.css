@@ -1,0 +1,50 @@
+/* Progress Indicator Component Styles */
+.progress-indicator-container {
+    margin-bottom: 24px;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.progress-text,
+.progress-percentage {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #53575D;
+}
+
+.progress-percentage {
+    color: #E85C2A;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #E85C2A 0%, #ff7a50 100%);
+    border-radius: 8px;
+    transition: width 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .progress-text,
+    .progress-percentage {
+        font-size: 0.85rem;
+    }
+
+    .progress-bar-container {
+        height: 6px;
+    }
+}

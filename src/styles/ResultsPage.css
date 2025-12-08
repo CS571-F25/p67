@@ -1,0 +1,260 @@
+/* Results Page Component Styles */
+.results-page-container {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #53575D;
+}
+
+/* Hero Section */
+.results-hero {
+    padding: 120px 0 40px;
+    background: linear-gradient(135deg, #53575D 0%, #6c757d 100%);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.results-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.results-subtitle {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Score Section */
+.results-score-section {
+    padding: 60px 0;
+    background: white;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.score-message {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.message-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #53575D;
+    margin-bottom: 16px;
+}
+
+.message-text {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #6c757d;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Recommendations Section */
+.recommendations-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.section-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #53575D;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.section-subtitle {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: #6c757d;
+    text-align: center;
+    margin-bottom: 48px;
+    line-height: 1.6;
+}
+
+/* Actions Section */
+.results-actions-section {
+    padding: 80px 0;
+    background: white;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.results-actions {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 16px;
+    padding: 48px;
+    text-align: center;
+}
+
+.actions-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #53575D;
+    margin-bottom: 16px;
+}
+
+.actions-text {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: #6c757d;
+    line-height: 1.7;
+    margin-bottom: 32px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.action-button {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.action-button.primary {
+    background: linear-gradient(135deg, #E85C2A, #ff7a50);
+    color: white;
+}
+
+.action-button.primary:hover {
+    background: linear-gradient(135deg, #d14a1a, #E85C2A);
+    box-shadow: 0 4px 12px rgba(232, 92, 42, 0.3);
+    color: white;
+}
+
+.action-button.secondary {
+    background: white;
+    color: #E85C2A;
+    border: 2px solid #E85C2A;
+}
+
+.action-button.secondary:hover {
+    background: #E85C2A;
+    color: white;
+}
+
+.quiz-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 32px;
+    border-top: 2px solid #dee2e6;
+}
+
+.quiz-action-button {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 12px 24px;
+    background: white;
+    color: #53575D;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quiz-action-button:hover {
+    background: #f8f9fa;
+    border-color: #E85C2A;
+    color: #E85C2A;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .results-hero {
+        padding: 100px 0 40px;
+    }
+
+    .results-title {
+        font-size: 2rem;
+    }
+
+    .results-subtitle {
+        font-size: 1rem;
+    }
+
+    .results-score-section,
+    .recommendations-section,
+    .results-actions-section {
+        padding: 60px 0;
+    }
+
+    .message-title {
+        font-size: 1.6rem;
+    }
+
+    .message-text {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .results-actions {
+        padding: 32px 24px;
+    }
+
+    .actions-title {
+        font-size: 1.5rem;
+    }
+
+    .action-buttons,
+    .quiz-actions {
+        flex-direction: column;
+    }
+
+    .action-button,
+    .quiz-action-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .results-title {
+        font-size: 1.75rem;
+    }
+
+    .message-title {
+        font-size: 1.4rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .actions-title {
+        font-size: 1.3rem;
+    }
+}

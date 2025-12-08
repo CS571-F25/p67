@@ -29,8 +29,8 @@ export default function TopBar() {
             <LinkContainer to="/about">
               <Nav.Link active={location.pathname === "/about"}>About Us</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/portfolio">
-              <Nav.Link active={location.pathname === "/portfolio"}>Portfolio</Nav.Link>
+            <LinkContainer to="/assessment">
+              <Nav.Link active={location.pathname === "/assessment"}>Assessment</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/news">
               <Nav.Link active={location.pathname === "/news"}>Recent News</Nav.Link>

@@ -1,0 +1,97 @@
+/* Score Gauge Component Styles */
+.score-gauge-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.gauge-wrapper {
+    position: relative;
+    width: 240px;
+    height: 240px;
+}
+
+.gauge-svg {
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+}
+
+.gauge-background {
+    transition: all 0.3s ease;
+}
+
+.gauge-progress {
+    transition: stroke-dashoffset 1s ease-in-out, stroke 0.3s ease;
+}
+
+.gauge-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.score-value {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    color: #53575D;
+    line-height: 1;
+}
+
+.score-max {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #6c757d;
+}
+
+.score-level {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gauge-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+
+    .score-value {
+        font-size: 3.5rem;
+    }
+
+    .score-max {
+        font-size: 1.3rem;
+    }
+
+    .score-level {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gauge-wrapper {
+        width: 180px;
+        height: 180px;
+    }
+
+    .score-value {
+        font-size: 3rem;
+    }
+
+    .score-max {
+        font-size: 1.2rem;
+    }
+
+    .score-level {
+        font-size: 1.2rem;
+    }
+}
