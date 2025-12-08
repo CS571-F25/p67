@@ -112,7 +112,7 @@ export default function Home(props) {
                             Let's work together to modernize your healthcare operations and deliver better patient outcomes.
                         </p>
                         <div className="cta-actions">
-                            <Link to="/contact" className="cta-button primary large">
+                            <Link to="/schedule" className="cta-button primary large">
                                 Schedule a Consultation
                             </Link>
                         </div>
