@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import QuizSelector from './QuizSelector';
-import QuizQuestion from './QuizQuestion';
-import ProgressIndicator from './ProgressIndicator';
-import ResultsPage from './ResultsPage';
+import QuizSelector from '../components/QuizSelector';
+import QuizQuestion from '../components/QuizQuestion';
+import ProgressIndicator from '../components/ProgressIndicator';
+import ResultsPage from '../components/ResultsPage';
 import '../styles/Assessment.css';
 
 // Quiz data sets

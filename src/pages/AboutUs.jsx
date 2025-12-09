@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import EmployeeCard from './EmployeeCard';
+import EmployeeCard from '../components/EmployeeCard';
 import '../styles/AboutUs.css';
 import logo from '../assets/Logo_Icon_Antonyx_Consulting.png';
 import { LuGoal } from "react-icons/lu";

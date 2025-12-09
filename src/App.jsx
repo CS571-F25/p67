@@ -1,10 +1,10 @@
 import { HashRouter, Route, Routes} from 'react-router'
 import './styles/App.css'
-import Home from './components/Home.jsx'
-import AboutUs from './components/AboutUs.jsx'
-import ScheduleConsultation from './components/ScheduleConsultation.jsx'
-import Assessment from './components/Assessment.jsx'
-import RecentNews from './components/RecentNews.jsx'
+import Home from './pages/Home.jsx'
+import AboutUs from './pages/AboutUs.jsx'
+import ScheduleConsultation from './pages/ScheduleConsultation.jsx'
+import Assessment from './pages/Assessment.jsx'
+import RecentNews from './pages/RecentNews.jsx'
 import TopBar from './components/TopBar.jsx' 
 
 function App() {
