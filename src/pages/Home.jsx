@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import { GrUpdate } from 'react-icons/gr';
 import { GiBullseye } from "react-icons/gi";
 import { MdComputer } from "react-icons/md";
+import Testimonials from '../components/Testimonials';
 import '../styles/Home.css';
 
 export default function Home(props) {
@@ -100,6 +101,8 @@ export default function Home(props) {
                     </div>
                 </div>
             </section>
+
+            <Testimonials />
 
             <section className="cta-section">
                 <div className="cta-background">

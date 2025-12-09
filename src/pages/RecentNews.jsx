@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Alert, Spinner } from 'react-bootstrap';
-import NewsCard from './NewsCard';
+import NewsCard from '../components/NewsCard';
 import '../styles/RecentNews.css';
 
 export default function RecentNews(props) {
