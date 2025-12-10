@@ -65,8 +65,12 @@
 
 .story-emphasis {
     font-weight: 600;
-    color: #E85C2A !important;
+    color: #53575D !important;
     font-size: 1.15rem;
+    border-bottom: 4px solid #E85C2A;
+    display: inline;
+    padding: 0;
+    padding-bottom: 5px;
 }
 
 /* Values Section - Modern Block Layout */
@@ -201,7 +205,7 @@
 .service-description {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    color: #E85C2A;
+    color: #53575D;
     margin-bottom: 20px;
     font-style: italic;
 }
@@ -240,7 +244,7 @@
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 1.1rem;
-    color: #6c757d;
+    color: #53575D;
     margin-bottom: 50px;
     max-width: 600px;
     margin-left: auto;
