@@ -48,7 +48,7 @@ export default function Testimonials() {
                                 </div>
                                 <p className="testimonial-text">"{testimonial.text}"</p>
                                 <div className="testimonial-author">
-                                    <h4 className="author-name">{testimonial.name}</h4>
+                                    <h3 className="author-name">{testimonial.name}</h3>
                                     <p className="author-title">{testimonial.title}</p>
                                 </div>
                             </div>

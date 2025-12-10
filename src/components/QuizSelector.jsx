@@ -21,11 +21,11 @@ export default function QuizSelector({ quizSets, onSelectQuiz }) {
                     <Row>
                         <Col lg={10} className="mx-auto text-center">
                             <h1 className="selector-title">Practice Modernization Assessment</h1>
-                            <p className="selector-subtitle">
+                            <h2 className="selector-subtitle">
                                 Take one of our comprehensive assessments to evaluate your practice's 
                                 performance and discover opportunities for improvement. Each assessment 
                                 takes about 5 minutes to complete.
-                            </p>
+                            </h2>
                         </Col>
                     </Row>
                 </Container>
