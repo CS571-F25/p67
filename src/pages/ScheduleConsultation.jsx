@@ -149,8 +149,9 @@ export default function ScheduleConsultation(props) {
           <Form onSubmit={handleSubmit}>
 
             <Form.Group className="mb-4">
-              <Form.Label className="consultation-label">Name</Form.Label>
+              <Form.Label for="name-input" className="consultation-label">Name</Form.Label>
               <Form.Control
+                id="name-input"
                 className={`consultation-input ${errors.name ? "is-invalid" : ""}`}
                 required
                 name="name"
@@ -163,8 +164,9 @@ export default function ScheduleConsultation(props) {
             </Form.Group>
 
             <Form.Group className="mb-4">
-              <Form.Label className="consultation-label">Email</Form.Label>
+              <Form.Label for="email-input" className="consultation-label">Email</Form.Label>
               <Form.Control
+                id="email-input"
                 className={`consultation-input ${errors.email ? "is-invalid" : ""}`}
                 required
                 type="email"
@@ -178,8 +180,9 @@ export default function ScheduleConsultation(props) {
             </Form.Group>
 
             <Form.Group className="mb-4">
-              <Form.Label className="consultation-label">Phone Number</Form.Label>
+              <Form.Label for="phone-input" className="consultation-label">Phone Number</Form.Label>
               <Form.Control
+                id="phone-input"
                 className={`consultation-input ${errors.phoneNumber ? "is-invalid" : ""}`}
                 required
                 type="tel"
@@ -193,8 +196,9 @@ export default function ScheduleConsultation(props) {
             </Form.Group>
 
             <Form.Group className="mb-4">
-              <Form.Label className="consultation-label">Preferred Date</Form.Label>
+              <Form.Label for="date-input" className="consultation-label">Preferred Date</Form.Label>
               <Form.Control
+                id="date-input"
                 className={`consultation-input ${errors.preferredDate ? "is-invalid" : ""}`}
                 required
                 type="date"
@@ -208,8 +212,9 @@ export default function ScheduleConsultation(props) {
             </Form.Group>
 
             <Form.Group className="mb-4">
-              <Form.Label className="consultation-label">Additional Details</Form.Label>
+              <Form.Label for="additional-details-input" className="consultation-label">Additional Details</Form.Label>
               <Form.Control
+                id="additional-details-input"
                 className={`consultation-input ${errors.message ? "is-invalid" : ""}`}
                 as="textarea"
                 rows={3}
