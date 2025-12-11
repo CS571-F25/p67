@@ -43,8 +43,7 @@ export default function Home(props) {
                             className="cta-button primary" 
                             onClick={() =>{}}
                         >
-                            Get Started
-                            <span className="button-icon">→</span>
+                            Get Started →
                         </button>
                         <Link to="/about" className="cta-button secondary">
                             Learn More

@@ -76,7 +76,7 @@
 .cta-button {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 14px 32px;
     border: none;
     border-radius: 8px;
@@ -87,7 +87,8 @@
 
 .cta-button.primary {
     background-color: #E85C2A;
-    color: white;
+    color: #FFFFFF;
+    font-weight: 700;
 }
 
 .cta-button.primary:hover {
@@ -96,18 +97,18 @@
 
 .cta-button.secondary {
     background-color: transparent;
-    color: #53575D;
-    border: 2px solid #53575D;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
 }
 
 .cta-button.secondary:hover {
-    background-color: #53575D;
+    background-color: #1a1a1a;
     color: white;
 }
 
 .cta-button.large {
     padding: 18px 40px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 .button-icon {

@@ -63,12 +63,12 @@
 
 .specialty-tag {
     background-color: rgba(232, 92, 42, 0.1);
-    color: #E85C2A;
+    color: #53575D;
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 500;
-    border: 1px solid rgba(232, 92, 42, 0.2);
+    border: 1px solid rgba(232, 92, 42, 0.24);
 }
 
 /* Responsive adjustments */
